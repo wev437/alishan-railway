@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿里山林業鐵路模擬計畫</title>
+    <style>
+        /* 全域樣式設定 */
+        :root {
+            --primary-green: #1a4d2e;
+            --bg-light: #f4fbf8;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            --text-gray: #555;
+        }
+
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-light);
+            color: var(--primary-green);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 90%;
+            padding: 60px 0;
+        }
+
+        /* 標題區塊 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+        }
+
+        /* 三欄式卡片 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-discord {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        /* 進度與內容區塊 */
+        .content-section {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .content-section h2 {
+            border-bottom: none;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+        }
+
+        .item-list i {
+            margin-right: 10px;
+        }
+
+        .description {
+            color: var(--text-gray);
+            max-width: 900px;
+        }
+
+        /* 頁尾 */
+        footer {
+            margin-top: 50px;
+            padding: 40px 0;
+            color: #999;
+            font-size: 0.9rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .card-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>阿里山林業鐵路模擬計畫</h1>
+            <p class="subtitle">歡迎加入我們的模擬鐵道世界，體驗阿里山林鐵的魅力！</p>
+        </header>
+
+        <section class="card-grid">
+            <div class="card">
+                <span class="card-icon">🚂</span>
+                <h3>列車介紹</h3>
+                <p>收錄阿里山林鐵各式列車與車輛資訊，持續更新中。</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">🗺️</span>
+                <h3>路線地圖</h3>
+                <p>探索嘉義到阿里山的完整路線與各站資訊。</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">👥</span>
+                <h3>加入社群</h3>
+                <p>加入我們的 Discord，一起參與模擬與開發！</p>
+                <a href="#" class="btn-discord">前往 Discord</a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>列車開發進度</h2>
+            <ul class="item-list">
+                <li>👤 DL49：已完工</li>
+                <li>🚃 阿里山號客車：建造中</li>
+                <li>🚚 貨物列車：建造中</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>地圖製作進度</h2>
+            <p>車庫園區目前完成度：35%</p>
+        </section>
+
+        <section class="content-section">
+            <h2>關於本計畫</h2>
+            <p class="description">
+                本模擬計畫致力於重現阿里山林業鐵路的運行體驗，包含列車操作、路線建模與車站細節。我們歡迎所有對鐵道有興趣的玩家與開發者加入！
+            </p>
+        </section>
+
+        <footer>
+            © 2026 阿里山林業鐵路模擬計畫
+        </footer>
+    </div>
+
+</body>
+</html>
